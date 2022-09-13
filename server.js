@@ -17,32 +17,32 @@ const addNumbers = (number1, number2) => {
 }
 
 
-/*app.get("/addTwoNumbers",(req,res) => {
-    var number1 = req.query.number1;
-    var number2 = req.query.number2;
+app.get("/addTwoNumbers",(req,res) => {
+    var number1 = req.query.n31;
+    var number2 = req.query.n2;
     var result = addNumbers(number1,number2)
-    res.json({statusCode: 200, data: result, message:"Success"})
-})*/
+    res.json({statusCode: 200, data: result, message:"Success-hmm"})
+})
 
-app.get("/addTwoNumber", (req, res) => {
+/*app.get("/addTwoNumber", (req, res) => {
     res.sendFile(path.join(__dirname,"/"));
-  });
+  });*/
 
-  /*app.post("/addTwoNumbers",(req,res) => {
-    var number1 = req.body.number1;
-    var number2 = req.body.number2;
+ app.post("/addTwoNumbers",(req,res) => {
+    var number1 = req.body.n1;
+    var number2 = req.body.n2;
     console.log("number1:", number1);
     console.log("number2:", number2); 
     var result = addNumbers(number1,number2)
     res.json({statusCode: 200, data: result, message:"Success"})
-})*/
+})
 
-app.post("/addTwoNumber", (req, res) => {
+/*app.post("/addTwoNumber", (req, res) => {
     const { a, b } = req.body;
     res.send({
       result: parseInt(a) + parseInt(b)
     });
-  });
+  });*/
 
 
 var port = process.env.port || 4000;
