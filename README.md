@@ -15,8 +15,7 @@ $ npm run start
 ```
 ### Steps to check the website active 
 - copy paste the url from the Terminal output of "npm run start" command
-- Paste it in a browser and press enter
-- to view the addiional test page add test page at the end of the url on the browser - http://localhost:4000/test.html
+- addition using a post method is demonstrated through Sample.html - http://localhost:4000/sample.html
 
 
 ## Copyrights

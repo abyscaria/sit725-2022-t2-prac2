@@ -63,10 +63,11 @@
           body: JSON.stringify(data)
         }).then(res => res.json())
           .then(data => {
-            const {result1} = data;
+            console.log('Success:', data);
+            console.log('result:', data.data);
             document.querySelector(
-              "result"
-            ).innerText = `The sum is: ${result1}`;
+              ".result"
+            ).innerText = `The sum is: ${data.data}`;
           })
           .catch(err => console.log(err));
       }
